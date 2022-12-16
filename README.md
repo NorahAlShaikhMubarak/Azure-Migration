@@ -70,4 +70,8 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Storage Account*   |  General purpose (V2) |  $82.25 |
 
 ## Architecture Explanation
-The web applications is not scalable to handle clients request such as the admin fills the notification form and sends the request, in the mean time a lot of requests can be submitted and the application could not handle all the load which results in HTTP timeout. Azure offers services available in for long-running tasks, in this case we used Azure Function via a service bus queue message to handle the loads of requests, which leads to making the performance of the application higher as well as making it scalable and cost-effective
+The project cosisnts of web app configered with a database, and a function to send notifications to attendees. 
+The new implementation of the project consists of a migration to an Azure App Service and Azure Postgres database instance which improves cost efficiency, and an azure function that is triggered by a service bus queue.
+
+The built in web application architecture is not scalable to handle clients' requests such as the admin filling the notification form and sending the request, in the meantime a lot of requests can be submitted and the application could not handle all the load which results in HTTP timeout. Azure offers services available for long-running tasks, in this case, we used Azure Function via a service bus queue message to handle loads of requests, which leads to making the performance of the application higher as well as making it scalable and cost-effective
+Through the migration to a microservice architecture and refactoring of the notification logic to an Azure Function via a service bus queue message, the different components of the web application are decoupled. This makes it more scalable and sending out notifications.
