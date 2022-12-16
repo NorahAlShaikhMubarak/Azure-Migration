@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3586df4a-66b6-4605-a5de-babfa2c7fc0a/AppServices/subscriptions/3586df4a-66b6-4605-a5de-babfa2c7fc0a/resourceGroups/project3udacity/providers/Microsoft.Web/sites/project3azureapp",
+    "appService.deploySubpath": "."
+}
