@@ -12,7 +12,7 @@ class BaseConfig:
     SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI') or DB_URL
     CONFERENCE_ID = 1
     SECRET_KEY = ''
-    SERVICE_BUS_CONNECTION_STRING ='=' #TODO: Update value
+    SERVICE_BUS_CONNECTION_STRING ='' #TODO: Update value
     SERVICE_BUS_QUEUE_NAME =''
     ADMIN_EMAIL_ADDRESS: ''
     SENDGRID_API_KEY = '' #Configuration not required, required SendGrid Account
